@@ -1,11 +1,17 @@
-import styles from "./App.module.css";
+import Header from "./header";
+import Banner from "./banner"
+import SocialMediaIcons from "./social-media-icons";
+import Footer from "./footer";
+import Projects from "./projects";
 
 export default function App() {
   return (
     <>
-      <div className={styles.title}>
-        <h1>Stefan Decimelli</h1>
-      </div>
+      <Header />
+      <SocialMediaIcons />
+      <Banner />
+      <Projects />
+      <Footer />
     </>
   )
 }

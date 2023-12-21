@@ -1,0 +1,28 @@
+.container {
+    left: 0;
+    min-width: 100vw;
+    margin-left: -10rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        margin-left: -1rem;
+    }
+}
+
+.pContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 1rem;
+    left: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .pContainer {
+        margin-top: 3rem;
+    }
+}
