@@ -1,9 +1,11 @@
-import './App.css'
+import styles from "./App.module.css";
 
 export default function App() {
   return (
     <>
-      <h1>Stefan Decimelli</h1>
+      <div className={styles.title}>
+        <h1>Stefan Decimelli</h1>
+      </div>
     </>
   )
 }
