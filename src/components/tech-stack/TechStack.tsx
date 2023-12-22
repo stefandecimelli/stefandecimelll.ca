@@ -6,6 +6,7 @@ import AWSIcon from "../../assets/tech-icons/AWS.svg"
 import JavaScriptIcon from "../../assets/tech-icons/JavaScript.svg"
 import HTML5Icon from "../../assets/tech-icons/HTML5.svg"
 import CSS3Icon from "../../assets/tech-icons/CSS3.svg"
+import NodeIcon from "../../assets/tech-icons/Node.js.svg"
 
 export default function TechStack() {
     return (
@@ -26,10 +27,14 @@ export default function TechStack() {
                     <p>Next.js</p>
                 </div>
                 <div>
+                    <img src={NodeIcon} alt="NodeIcon" height="64" width="64" />
+                    <p>Node.js</p>
+                </div>
+                <div>
                     <img src={AWSIcon} alt="AWSIcon" height="64" width="64" />
                     <p> AWS Amplify</p>
                 </div>
-                <div className={styles.divider}/>
+                <div className={styles.divider} />
                 <div>
                     <img src={JavaScriptIcon} alt="JavaScriptIcon" height="64" width="64" />
                     <p>JavaScript</p>
