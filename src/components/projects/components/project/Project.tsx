@@ -1,6 +1,10 @@
+import { ReactElement } from "react"
 import styles from "./Project.module.css"
 
-export default function Project({ name, description, href }: { name: string, description: string, href: string }) {
+export default function Project({ name, description, href, icons
+}: {
+    name: string, description: string, href: string, icons: ReactElement[]
+}) {
     return (
         <a target="_blank" href={href}>
             <div className={styles.projectCard}>
@@ -9,7 +13,10 @@ export default function Project({ name, description, href }: { name: string, des
                 </a>
                 <hr />
                 <div className={styles.bottom}>
-                    <p>{description}</p>
+                    <div>
+                        {icons.map((i) => i)}
+                        <p>{description}</p>
+                    </div>
                     <a target="_blank" href={href}>
                         <button>Try it out</button>
                     </a>

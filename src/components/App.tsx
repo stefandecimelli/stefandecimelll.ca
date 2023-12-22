@@ -3,6 +3,7 @@ import Banner from "./banner"
 import SocialMediaIcons from "./social-media-icons";
 import Footer from "./footer";
 import Projects from "./projects";
+import TechStack from "./tech-stack";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Header />
       <SocialMediaIcons />
       <Banner />
+      <TechStack />
       <Projects />
       <Footer />
     </>
